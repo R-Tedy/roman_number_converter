@@ -1,0 +1,52 @@
+body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(194, 205, 215);
+  text-align: center;
+  gap: 1rem;
+}
+
+.box-01 {
+  margin: 2rem auto;
+}
+
+.box-02 {
+  border: 2px solid black;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  & div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    & input, button {
+      padding: 0.5rem;
+      font-size: medium;
+      font-weight: 700;
+      border: none;
+      border-radius: 0.5rem;
+    };
+    & button {
+      background-color: burlywood;
+      cursor: pointer;
+      font-weight: bold;
+      &:hover {
+        background-color: rgba(222, 184, 135, 0.468);
+        border: solid 1px burlywood;
+      }
+    }
+  }
+}
+
+.box-03 {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: solid 1px burlywood;
+  margin-top: 1rem;
+  display: none;
+  & h2 {
+  text-transform: uppercase;
+}
+}
